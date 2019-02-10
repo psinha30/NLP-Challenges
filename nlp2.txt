@@ -1,0 +1,13 @@
+The main part of NLP used here is the Tf-idf method:
+Predict the tag:
+In this part, we predict the tag on the test data. We perform in 2 steps : general and local.
+The general part will be done before. Indeed, we keep the best word found in the part tf-idf. For each question that we have to predict the tag, we will use one of these tags named “potential_tag”.
+These words allow to understand that we are in the category “physic”.
+
+The second step is based on create a tf idf split on each question, and not split on each category. It allows to precise the tag for each question.
+Now, we’ll keep the 3 best word order by tf-idf for each question.
+
+Now, we have all the element to create the best predict tag. Indeed, we have the vector “potential_tag” and for each question, 3 word which can be a tag. So for example, we can keep the first word in the vector “potential_tag” and add the 2 best word come from “df”
+
+end:
+In the above paragraph there is nothing to write as the Tf-idf model would be buolt and this intersting concept of model would be applied
